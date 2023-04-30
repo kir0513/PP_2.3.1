@@ -21,7 +21,7 @@ public class CarsController {
         this.carService2 = carService2;
     }
 
-//
+
     @GetMapping(value = "/cars")
     public String showCars(@RequestParam(required = false, value = "count") Optional<Integer> count, Model model) {
         if (count.isPresent() && count.get() >=0 && count.get() <= 5) {
