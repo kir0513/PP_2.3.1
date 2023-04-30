@@ -5,16 +5,20 @@ import org.springframework.stereotype.Service;
 import web.config.dao.CarDao;
 import web.config.model.Car;
 
-import java.util.ArrayList;
 import java.util.List;
+
 @Service
-public class CarServiceImpl implements CarService{
-    @Autowired
-    CarDao carDao;
+public class CarService1Impl implements CarService1{
+
+
+    private final CarDao carDao;
+
+    public CarService1Impl(CarDao carDao) {
+        this.carDao = carDao;
+    }
 
     @Override
-    public List<Car> getCars(int count) {
-//        return carDao.getCars(count);
-        return null;
+    public List<Car> getAllCars() {
+        return carDao.getAllCars();
     }
 }
