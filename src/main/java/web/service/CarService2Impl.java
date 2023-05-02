@@ -9,14 +9,14 @@ import java.util.List;
 @Service
 public class CarService2Impl implements CarService2{
 
-    private final CarDao carDao;
+  //  private final CarDao carDao;
 
-    public CarService2Impl(CarDao carDao) {
-        this.carDao = carDao;
-    }
+  //  public CarService2Impl(CarDao carDao) {
+  //      this.carDao = carDao;
+  //  }
 
-    @Override
-    public List<Car> getPartOfListCar(int count) {
-        return carDao.getPartOfListCar(count);
-    }
+   // @Override
+   // public List<Car> getPartOfListCar(int count) {
+  //      return carDao.getPartOfListCar(count);
+   // }
 }

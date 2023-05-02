@@ -21,4 +21,8 @@ public class CarService1Impl implements CarService1{
     public List<Car> getAllCars() {
         return carDao.getAllCars();
     }
+    @Override
+     public List<Car> getPartOfListCar(int count) {
+        return carDao.getPartOfListCar(count);
+    }
 }
