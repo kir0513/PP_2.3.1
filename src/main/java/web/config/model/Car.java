@@ -7,7 +7,7 @@ public class Car {
     private String color;
     private int power;
     public Car(){}
-//
+
     public Car(String model, String color, int power) {
         this.model = model;
         this.color = color;
