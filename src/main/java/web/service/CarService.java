@@ -4,7 +4,7 @@ import web.config.model.Car;
 
 import java.util.List;
 
-public interface CarService1 {
+public interface CarService {
     //
     List<Car> getAllCars();
     List<Car> getPartOfListCar(int count);

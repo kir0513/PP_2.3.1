@@ -4,17 +4,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import web.service.CarService1;
+import web.service.CarService;
 
 import java.util.Optional;
 
 @Controller
 public class CarsController {
 //
-    private final CarService1 carService1;
+    private final CarService carService1;
 
 
-    public CarsController(CarService1 carService1) {
+    public CarsController(CarService carService1) {
         this.carService1 = carService1;
 
     }
